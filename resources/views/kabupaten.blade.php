@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Profil Kabupaten Toba</title>
+    <title>Toba Hita</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}" />
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -403,7 +404,7 @@
                         <div class="footer-small">Portal informasi terintegrasi untuk transparansi dan pelayanan publik di Kabupaten Toba.</div>
                     </div>
                 </div>
-                <div class="footer-meta">© <span id="year"></span> Pemerintah Kabupaten Toba. Hak Cipta Dilindungi.</div>
+                
             </div>
             <div class="footer-col">
                 <h4 style="color:#fff;margin-bottom:8px">Hubungi kami</h4>
@@ -441,7 +442,9 @@
         }
         
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('year').textContent = new Date().getFullYear();
+            // Auto-populate year (jika elemen ada)
+            const yearEl = document.getElementById('year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
 
             // 2. Script Kalender Dinamis
             const today = new Date();

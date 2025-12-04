@@ -10,7 +10,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
     <style>
-        /* CSS DARI ANDA */
         * { font-family: 'Poppins', sans-serif; }
         body { background-color: #f8f9fa; overflow-x: hidden; }
         .sidebar { min-height: 100vh; background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%); position: fixed; left: 0; top: 0; width: 250px; z-index: 100; }

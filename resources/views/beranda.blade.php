@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     
-    <title>{{ $judul_tab }}</title> 
+    <title>Toba Hita</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}" />
+
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -184,34 +186,31 @@
     </section>
 </main>
 
-<footer>
+
+    <footer class="site-footer">
         <div class="footer-inner">
-            <div class="footer-left">
-                <img src="http://127.0.0.1:8000/images/logo.png" alt="logo" style="height:42px;margin-bottom:12px">
-                <div style="color:rgba(255,255,255,0.85);max-width:420px;font-size:13px">
-                    Portal informasi terintegrasi untuk transparansi dan pelayanan publik yang lebih baik di seluruh wilayah Kabupaten Toba.
-                </div>
-            </div>
-
-            <div class="footer-right">
-                <div style="color:#cbd5df">
-                    <div style="font-weight:700;margin-bottom:6px">Hubungi kami</div>
-                    <div style="font-size:13px">+62 3456 7890<br>tobahita@mail.com</div>
-                </div>
-
-                <div style="color:#cbd5df">
-                    <div style="font-weight:700;margin-bottom:6px">Ikuti Kami</div>
-                    <div style="display:flex;gap:10px">
-                        <a href="#" style="color:#cbd5df"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="color:#cbd5df"><i class="fab fa-twitter"></i></a>
-                        <a href="#" style="color:#cbd5df"><i class="fab fa-instagram"></i></a>
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="{{ asset('images/logo.png') }}" alt="logo">
+                    <div>
+                        <strong style="color:#fff">Toba Hita</strong>
+                        <div class="footer-small">Portal informasi terintegrasi untuk transparansi dan pelayanan publik di Kabupaten Toba.</div>
                     </div>
                 </div>
+                
             </div>
-        </div>
-
-        <div style="max-width:var(--max-w);margin:26px auto 0;text-align:center;color:rgba(255,255,255,0.7);font-size:13px">
-            © <span id="year"></span> Pemerintah Kabupaten Toba. Hak Cipta Dilindungi.
+            <div class="footer-col">
+                <h4 style="color:#fff;margin-bottom:8px">Hubungi kami</h4>
+                <div class="footer-small">+62 3456 7890<br>tobahita@mail.com</div>
+            </div>
+            <div class="footer-col" aria-label="Ikuti kami">
+                <div class="social-label">Ikuti kami</div>
+                <div class="social-links">
+                    <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.07 5.66 21.13 10.44 21.95v-6.77H8.08v-2.9h2.36V9.41c0-2.33 1.4-3.62 3.53-3.62 1.02 0 2.08.18 2.08.18v2.28h-1.17c-1.15 0-1.51.72-1.51 1.46v1.75h2.57l-.41 2.9h-2.16V21.95C18.34 21.13 22 17.07 22 12.07z"/></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 5.92c-.63.28-1.3.47-2.01.56a3.47 3.47 0 0 0 1.52-1.92 6.69 6.69 0 0 1-2.2.84 3.34 3.34 0 0 0-5.68 3.04 9.47 9.47 0 0 1-6.88-3.49 3.34 3.34 0 0 0 1.03 4.45c-.52-.02-1.01-.16-1.44-.4v.04a3.34 3.34 0 0 0 2.67 3.27c-.46.13-.94.15-1.43.06a3.35 3.35 0 0 0 3.12 2.33A6.7 6.7 0 0 1 2 18.58 9.44 9.44 0 0 0 7.29 20c5.55 0 8.58-4.6 8.58-8.58v-.39c.59-.42 1.04-.94 1.13-1.45-.25.11-.53.18-.82.21z"/></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.4-3.6a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 18.4 4.6zM12 10.6A1.4 1.4 0 1 1 10.6 12 1.4 1.4 0 0 1 12 10.6z"/></svg></a>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Desa - Kabupaten Toba</title>
+    <title>Toba Hita</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}" />
+
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -85,7 +87,7 @@
         /* SEARCH - Floating overlapping the hero */
         .search-wrap{
             max-width:720px;
-            margin: -45px auto 40px; /* EDIT: Margin negatif lebih besar agar naik ke atas hero */
+            margin: -60px auto 40px; /* EDIT: Margin negatif lebih besar agar naik ke atas hero */
             position:relative;
             padding:0 16px;
             z-index: 10;
@@ -248,7 +250,7 @@
                 </article>
 
                 <article class="card" data-name="desa sigumpar toba">
-                    <div class="thumb"><img src="http://127.0.0.1:8000/images/desa sigumpar toba.jpg" alt="Desa Sigumpar Toba"></div>
+                    <div class="thumb"><img src="http://127.0.0.1:8000/images/desa sigumpar.jpeg" alt="Desa Sigumpar"></div>
                     <div class="body">
                         <h3>Desa Sigumpar Toba</h3>
                         <div class="small-meta">Ekowisata • Kebun buah</div>
@@ -266,13 +268,14 @@
 
     <footer>
         <div class="footer-inner">
-            <div class="footer-left">
-                <img src="http://127.0.0.1:8000/images/logo.png" alt="logo" style="height:42px;margin-bottom:12px">
-                <div style="color:rgba(255,255,255,0.85);max-width:420px;font-size:13px">
-                    Portal informasi terintegrasi untuk transparansi dan pelayanan publik yang lebih baik di seluruh wilayah Kabupaten Toba.
+            <div class="footer-left" style="display:flex; align-items:center; gap:16px;">
+                <img src="http://127.0.0.1:8000/images/logo.png" alt="logo" style="height:42px;">
+                <div>
+                        <strong style="color:#fff">Toba Hita</strong>
+                        <div style="font-size:13px; color:#cbd5df; margin-top:4px;">Portal informasi terintegrasi untuk transparansi dan pelayanan publik di Kabupaten Toba.</div>
                 </div>
             </div>
-
+            
             <div class="footer-right">
                 <div style="color:#cbd5df">
                     <div style="font-weight:700;margin-bottom:6px">Hubungi kami</div>
@@ -289,11 +292,9 @@
                 </div>
             </div>
         </div>
-
-        <div style="max-width:var(--max-w);margin:26px auto 0;text-align:center;color:rgba(255,255,255,0.7);font-size:13px">
-            © <span id="year"></span> Pemerintah Kabupaten Toba. Hak Cipta Dilindungi.
-        </div>
     </footer>
+
+
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
